@@ -1,0 +1,26 @@
+{
+  "name": "tool.csv-to-json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevgonzalezb/Tool.csv-to-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevgonzalezb/Tool.csv-to-json/issues"
+  },
+  "homepage": "https://github.com/stevgonzalezb/Tool.csv-to-json#readme",
+  "dependencies": {
+    "convert-csv-to-json": "^1.4.0"
+  }
+}
