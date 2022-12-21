@@ -17,5 +17,19 @@ for (let file of files) {
     let fileInputName = inputFolder + file
     let fileOutputName = outputFolder + file + ".json"
 
-    csvToJson.generateJsonFileFromCsv(fileInputName,fileOutputName)
+    // Convert csv to json.
+    let json = csvToJson.getJsonFromCsv(fileInputName)
+
+    // Filter json to get id and name.
+    let filtered = json.map(object => {
+        return {
+            id: object.ID,
+            name: object.Frutas
+        }
+    })
+
+    // Write json file.
+    fs.writeFile(fileOutputName, JSON.stringify(filtered), function(err) {
+        if (err) console.log(err)
+    })
 }
